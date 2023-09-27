@@ -277,12 +277,33 @@ label,input, select{
 
     .toddler_pics{
         flex-direction: column;
+        align-self: center;
+        width: 200px;
+        height: 150px;
+    }
+
+    .activities_table{
+        font-size: 18px;
+        text-align: center;
+
+    }
+
+    .activities_table th, td{
+        width: 50;
+    }
+
+    .activities_table td{
+        width: 33%;
     }
 
     /* Tuition & Pricing*/
     
     .tour{
         flex-direction: column;
+    }
+    
+    .scheduleatour p{
+        margin-right: 0;
     }
 }
 
