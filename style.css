@@ -1,0 +1,310 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Main Nav */
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #a5d16d;
+    font-family: "Lato", serif;
+    font-size: 18px;
+}
+
+.navbar img{
+    max-height: 200px;
+    max-width: 200px;
+    margin-top: -25px;
+}
+.navbar_list{
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+}
+
+.navbar_list a{
+    color: #3d242f;
+    text-decoration: none;
+}
+
+.navbar_list a:hover{
+    text-decoration: underline;
+}
+
+/* Footer */
+
+.meetourteam{
+    display: flex;
+    min-height: 60vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    font-family: "Lato", serif;
+}
+
+.meetourteam h1{
+    align-self: center;
+}
+
+.team{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.team img{
+    width: 200px;
+    height: 200px;
+    margin-top: -50px;
+    border: 5px dashed #589606;
+    border-radius: 100px;
+}
+.team p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.copyright{
+    text-align: center;
+    padding: 50px 0;
+    font-family: "Lato", serif;
+    background-color: #a5d16d;
+}
+
+/* Home */
+
+body{ 
+    background-color: #e1efc7;
+}
+
+.center{
+    display: flex; 
+}
+
+.center img{
+    flex: 2;
+}
+
+.center_description{
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 50px 50px;
+    font-family: "Lato", serif;
+}
+
+.center_description h1{
+    line-height: 50px;
+}
+
+.center_description p{
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.center_description button{
+    font-size: 16px;
+    align-self: center;
+    margin: 20px;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 40px;
+    background-color: #589606;
+    color: white;
+    font-family: "Lato", serif;
+}
+
+.center_description button:hover{
+    color: #589606;
+    background-color: white;
+    border: 2px solid #589606;
+}
+
+/* Tuition & Pricing*/
+
+.tour{
+    display: flex; 
+    font-family: "Lato", serif;
+}
+
+.scheduleatour{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 80px 50px;
+}
+
+.scheduleatour p{
+    margin-right: 100px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.tour_form{
+    display: flex;
+    flex-direction: column;
+}
+
+.tour_form h2{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+label,input, select{
+    display: block;
+    min-height: 30px;
+    min-width: 200px;
+    border: none;
+    border-radius: 40px;
+}
+
+#submit{
+    font-size: 16px;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 40px;
+    background-color: #589606;
+    font-family: "Lato", serif;
+    color: white;
+}
+
+#submit:hover{
+    color: #589606;
+    background-color: white;
+    border: 2px solid #589606;
+}
+
+.contact{
+    flex: 1; 
+}
+
+.callus{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 50px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #a5d16d;
+    border: 10px solid #589606;
+    font-family: "Lato", serif;
+}
+
+.callus > *{
+    text-align: center;
+}
+
+.callus p{
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.callus button{
+    font-size: 16px;
+    align-self: center;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 40px;
+    background-color: #589606;
+    font-family: "Lato", serif;
+    color: white;
+}
+
+.callus button:hover{
+    color: #589606;
+    background-color: white;
+    border: 2px solid #589606;
+}
+
+
+/* Media Queries*/
+
+@media only screen and (max-width: 800px) {
+
+    /* Main Nav */
+
+    .navbar{
+        flex-direction: column;
+        justify-content: evenly;
+    }
+    .navbar_list{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    /* Footer */
+
+    .meetourteam{
+        padding: 70px 0;
+    }
+    .team{
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        margin-top: 80px;
+    }
+    .team p{
+        margin-bottom: 30px;
+    }
+    
+    /* Home Page */
+
+    .center{
+        flex-direction: column;
+    }
+    .center_description{
+        gap: 40px;
+        margin-top: 50px; 
+    }
+
+    /* Programs & Curriculum */
+
+    .toddlerday{
+        flex-direction: column;
+        gap: 320px;
+    }
+
+    .toddler_pics{
+        flex-direction: column;
+        align-self: center;
+        width: 200px;
+        height: 150px;
+    }
+
+    .activities_table{
+        font-size: 18px;
+        text-align: center;
+
+    }
+
+    .activities_table th, td{
+        width: 50;
+    }
+
+    .activities_table td{
+        width: 33%;
+    }
+
+    /* Tuition & Pricing*/
+    
+    .tour{
+        flex-direction: column;
+    }
+    
+    .scheduleatour p{
+        margin-right: 0;
+    }
+}
+
+
