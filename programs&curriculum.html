@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Programs&Curriculum</title>
+        <style>
+            .toddlerday{
+                display: flex;
+                font-family: "Lato", serif;
+                background-color: white;
+            }
+
+            .toddler_description{
+                flex: 3;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                padding: 80px 50px;
+            }
+
+            .toddler_description p{
+                font-size: 18px;
+                line-height: 25px;
+            }
+
+            .toddler_pics{
+                display: flex;
+                gap: 20px;
+                width: 400px;
+                height: 300px;
+            }
+
+            .testimonials{
+                flex: 1;
+                padding: 50px 30px;
+                background-color: #a5d16d;
+                border: 10px solid #589606;
+            }
+
+            .sally{
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .sally > *{
+                text-align: center;
+            }
+
+            .sally p{
+                font-size: 18px;
+                line-height: 35px;
+            }
+
+            .classroomactivities{
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                padding: 80px 50px;
+                font-family: "Lato", serif;
+                background-image: url('images/hands.jpg');
+            }
+
+            .classroomactivities p{
+                font-size: 18px;
+                line-height: 25px; 
+                background-color: #a5d16d;
+            }
+
+            .activities_table{
+               font-size: 18px;
+               text-align: center;
+            }
+
+            .activities_table th, td{
+                width: 100;
+                background-color:#a5d16d;
+                padding: 20px 20px;
+            }
+
+            .activities_table td{
+                width: 33%;
+            }
+        </style>
+    </head>
+    <body>
+         <!-- Main Nav -->
+         <header>
+            <nav class="navbar">
+                <a id="logo" href="greenlight.html"><img src="images/logo.png" alt="our logo"/></a>
+                <ul class="navbar_list">
+                    <li><a href="greenlight.html">Home</a></li>
+                    <li><a href="programs&curriculum.html">Programs & Curriculum</a></li>
+                    <li><a href="tuition&pricing.html">Tuition & Pricing</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Programs & Curriculum -->
+
+            <!-- Inside a Toddler's Day -->
+            <div class="toddlerday">
+                <div class="toddler_description">
+                    <h1>Inside a Toddler's Day</h1> 
+                    <p>Every day is a little different, but it sure is fun for the little ones.
+                        We have group time in the classrooms, story time, nap time, and playtime
+                        (the most important!)
+                    </p>
+                    <div class="toddler_pics">
+                        <img src="images/toddler1.jpg" alt="here's a look at a toddler classroom">
+                        <img src="images/toddler3.jpg" alt="toddler playing with blocks">
+                    </div>
+                </div>
+                <div class="testimonials">
+                    <div class="sally">
+                        <h1>What Our Families are Saying</h1>
+                            <p>"From the engaging activities to the caring staff, it's been a fantastic
+                                experience for our little one. Our toddler has not only learned valuable
+                                skills but has also formed lasting friendships. Highly recommended!"
+                            </p>
+                            <p><i>-Sally Cane, Greenlight Childcare toddler parent</i></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Classroom Activites -->
+                <div class="classroomactivities">
+                    <h1>Classroom Activities</h1>
+                    <p><strong>Everyday, toddlers get involved in fun and educational classroom activities like these!</strong></p>
+                    <table class="activities_table">
+                        <tr>
+                            <th>Sensory Bins</th>
+                            <th>Music & Movement</th>
+                            <th>Puzzle Play</th>
+                        </tr>
+                        <tr>
+                            <td>Fill containers with materials like rice, sand, or water beads, and let toddlers
+                                explore these textures.
+                            </td>
+                            <td>Play fun songs and encourage toddlers to dance, clap, or play simple instruments
+                                like tambourines or maracas.
+                            </td>
+                            <td>Provide age-appropriate puzzles with large, easy-to-grasp pieces. Puzzles help
+                                with problem-solving, spatial awareness, and hand-eye coordination.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+        <!-- Footer Bar -->
+        <div class="meetourteam">
+            <h1>Meet our Team</h1>
+                <div class="team">
+                    <div class ="person1">
+                        <img src="images/person1.jpg" alt="Sharon">
+                        <p>Sharon, Educator</p>
+                    </div>
+                    <div class ="person2">
+                        <img src="images/person2.jpg" alt="Devon">
+                        <p>Devon, Educator</p>
+                    </div>
+                    <div class ="person3">
+                        <img src="images/person3.jpg" alt="Nancy">
+                        <p>Nancy, Educator</p>
+                    </div>
+                </div>
+        </div>
+        <footer class="copyright">
+            &copy; 2023 Greenlight Childcare Inc.
+        </footer>
+    </body>
+</html>
+   
